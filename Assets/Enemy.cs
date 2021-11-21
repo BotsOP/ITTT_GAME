@@ -57,7 +57,7 @@ public class Enemy : MonoBehaviour, IDamagable
         healthSlider.value = health / 100;
         if (health <= 0)
         {
-            Debug.Log("Died");
+            Destroy(gameObject);
         }
     }
 }
